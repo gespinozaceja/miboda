@@ -4,24 +4,35 @@
 <title>Gerardo Y Mayde </title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="">
+<link rel="stylesheet" href="css/normalize.min.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/jquery.fancybox.css">
+<link rel="stylesheet" href="css/flexslider.css">
+<link rel="stylesheet" href="css/styles.min.css">
+<link rel="stylesheet" href="css/queries.css">
 <style>
 </style>
 <body>
-<<<<<<< HEAD
     
-<div style="position: relative; width: 100%; height: 0; padding-top: 48.1481%;
- padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
- border-radius: 8px; will-change: transform;">
-  <iframe style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-    src="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEd5sRMnpA&#x2F;view?embed">
-  </iframe>
-</div>
-<a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEd5sRMnpA&#x2F;view?utm_content=DAEd5sRMnpA&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Gerardo Y Mayde</a> by Espinoza Gerardo
+    <section class="hero">
+        <section class="navigation">
+            <header>
+                <div class="header-content">
+                    <div class="logo"><a href="#"><img src="static/img/home-logo.png" alt="Logo"></a></div>
+                    <div class="header-nav">
+                        <nav>
+                            <ul class="primary-nav">
+                                <li><a href="#invitation">Invitation</a></li>
+                                <li><a href="#rsvp">RSVP</a></li>
+                        </nav>
+                    </div>
+                    <div class="navicon">
+                        <a class="nav-toggle" href="#"><span></span></a>
+                    </div>
+                </div>
+            </header>
+        </section>
 
-</body>
-</html>
-=======
-  
   <div style="position: relative; width: 100%; height: 0; padding-top: 177.7778%;
   padding-bottom: 48px; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
   border-radius: 8px; will-change: transform;">
@@ -30,7 +41,77 @@
    </iframe>
  </div>
  <a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAEd7a4jTKI&#x2F;view?utm_content=DAEd7a4jTKI&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener"></a> 
+ <section class="rsvp text-center" id="rsvp">
 
+    <div id="rsvp-modal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span>&times;</span>
+                    </button>
+                    <div class="section-padding">
+                        <h3>Grasias!</h3>
+                        <p>Estasmos felizes de que nos puendan a companar.</p>
+                        <div id="add-to-cal"></div>
+                    </div>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <h3>Que estas esperando, apuntate?</h3>
+                <p>Le agradecemos de todo corazon por RSVP antes de Agosto 1</p>
+                <form id="rsvp-form" class="rsvp-form"
+                      action=""
+                      method="POST">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-envelope"></i><input type="email" name="email" class=""
+                                                                     placeholder="Your email"
+                                                                     required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-user"></i><input name="name" class=""
+                                                                 placeholder="Your name"
+                                                                 required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
+                                                                  max="4"
+                                                                  placeholder="Husband/Wife or kids"
+                                                                  required>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="form-input-group">
+                                <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
+                                                                class="" min="0"
+                                                                placeholder="Invite code"
+                                                                required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12" id="alert-wrapper"></div>
+                    </div>
+                    <button class="btn-fill rsvp-btn">
+                        Si,
+                        Este soy yo!
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
 </body>
 </html>
->>>>>>> 42e7950d5b3e1e2bff7dd59de8b13c5d9173bd2d
