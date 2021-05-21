@@ -1,0 +1,18 @@
+.btn-down {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn-down .fas {
+    color: #b88917;
+    font-size: 80px;
+    position: absolute;
+    bottom: 0px;
+
+
+}
+
+.text-global {
+    color: #b88917;
+    font: bolder;
+}
