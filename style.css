@@ -15,4 +15,13 @@
 .text-global {
     color: #b88917;
     font: bolder;
+    text-align: center;
+}
+
+
+.bg-img {
+    background-image: url('static/img/hex_flower_generic.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
 }
