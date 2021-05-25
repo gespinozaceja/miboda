@@ -27,6 +27,6 @@
     width: auto;
     padding: 54%;
     margin: 5%;  
-    margin-right: 20%;
-    margin-left: 20%;
+    margin-right: 20% 0;
+    margin-left: 20% 0;
 }
