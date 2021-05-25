@@ -1,0 +1,30 @@
+.btn-down {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btn-down .fas {
+    color: #b88917;
+    font-size: 80px;
+    position: absolute;
+    bottom: 0px;
+
+
+}
+
+.text-global {
+    color: #ffe4e1;
+    font: bolder;
+    text-align: center;
+}
+
+
+.bg-img {
+    background-image: url('static/img/hex_flower_generic.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    padding: 54%;
+    margin: 5%;  
+}
