@@ -1,14 +1,8 @@
-.btn-down {
+.btn-select {
     margin: 0 auto;
     text-align: center;
-}
-
-.btn-down .fas {
-    color: #b88917;
-    font-size: 80px;
-    position: absolute;
-    bottom: 0px;
-
+    background-color: #b0892f;
+    font-size: 16px;
 
 }
 
@@ -18,15 +12,20 @@
     text-align: center;
 }
 
-
 .bg-img {
     background-image: url('static/img/hex_flower_generic.png');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     width: auto;
     padding: 54%;
     margin: 5%;  
-    margin-right: 20% 0;
-    margin-left: 20% 0;
+    margin-right: 45% 0;
+    margin-left: 45% 0;
+}
+
+.center-form {
+    width: auto;
+    padding: 10%;
+    margin: 10%;
 }
