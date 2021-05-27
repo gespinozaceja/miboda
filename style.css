@@ -1,9 +1,18 @@
 .btn-select {
     margin: 0 auto;
     text-align: center;
-    background-color: #b0892f;
+    background-color:#8e709d;
     font-size: 16px;
+    border: none;
+    padding: 2%;
+    margin-top: 7%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    border-radius: 8px;
+    transition-duration: 0.3s;
+}
 
+.btn-select:hover{
+    opacity: 0.3;
 }
 
 .text-global {
@@ -13,19 +22,45 @@
 }
 
 .bg-img {
-    background-image: url('static/img/hex_flower_generic.png');
+    background-image: url('static/img/hex_flower_generic.png') ;
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     background-position: center;
-    width: auto;
-    padding: 54%;
-    margin: 5%;  
-    margin-right: 45% 0;
-    margin-left: 45% 0;
+    height: auto;
+    padding: 7%;
 }
 
 .center-form {
-    width: auto;
+    width: 100%;
     padding: 10%;
-    margin: 10%;
+    position: center;
+    margin-top: 35%;
+
 }
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width:1000px){
+    .flex-container {
+        flex-direction: column;
+    }
+    .bg-img {
+        padding: 35%;
+    }
+    .center-form {
+        margin-top: auto;
+        padding: 15%;
+        padding-bottom: 30%;
+    }
+    .btn-select{
+        margin-left: 15%;
+    }
+  
+}
+
+
+
+
