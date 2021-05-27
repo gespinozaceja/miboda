@@ -30,7 +30,7 @@ a{
 }
 
 .text-global {
-    color: #b88917;
+    color: #ffe4e1;
     font: bolder;
     text-align: center;
 }
@@ -39,6 +39,7 @@ a{
 .bg-img {
     background-image: url('static/img/hex_flower_generic.png');
     background-repeat: no-repeat;
+    background-size: cover;
     background-position: center;
     background-size: 80%;
 
@@ -120,3 +121,4 @@ footer{
     color: var(--pink);
 
   }
+   
