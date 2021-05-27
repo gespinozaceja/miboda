@@ -1,3 +1,20 @@
+*{
+    --darkBlue:#3269a8;
+    --blue: #88a9c3;
+    --pink: #ffe4e1;
+    --gold: #e3c288;
+    font-family: 'Pattaya', sans-serif;
+font-family: 'Recursive', sans-serif;
+}
+body{
+
+    font-family: 'Pattaya', sans-serif;
+    font-family: 'Recursive', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
 .btn-down {
     margin: 0 auto;
     text-align: center;
@@ -24,4 +41,82 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 80%;
+
 }
+.marginDiv{
+    padding:10px;
+}
+.marginBottom{
+    margin-bottom: 20%;
+}
+header{
+    z-index: 99999;
+    background-color:var(--gold) ;
+    color: var(--pink);
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+footer{
+    background-color:var(--gold) ;
+    color: var(--pink);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+.logo{
+    margin:10px;
+}
+.navBtn {
+    display: inline-block;
+    border-radius: 4px;
+    background-color: var(--blue);
+    border: none;
+    color: var(--pink);
+    text-align: center;
+    font-size: 28px;
+    width: 110px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .navBtn a {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+    text-decoration: none;
+    color: var(--pink);
+
+  }
+  
+  .navBtn a:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+    text-decoration: none;
+    color: var(--pink);
+
+  }
+  
+  .navBtn:hover a {
+    padding-right: 25px;
+    text-decoration: none;
+    color: var(--pink);
+
+  }
+  
+  .navBtn:hover a:after {
+    opacity: 1;
+    right: 0;
+    text-decoration: none;
+    color: var(--pink);
+
+  }

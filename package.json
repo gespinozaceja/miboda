@@ -18,5 +18,8 @@
   "homepage": "https://github.com/gespinozaceja/miboda#readme",
   "dependencies": {
     "fontawesome": "^5.6.3"
+  },
+  "devDependencies": {
+    "bootstrap": "^5.0.1"
   }
 }
