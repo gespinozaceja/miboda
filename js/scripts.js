@@ -17,8 +17,8 @@ $(document).ready(function () {
                     if (data.result === "error") {
                         $('#alert-wrapper').html(alert_markup('danger', data.message));
                     } else {
-                        $('#alert-wrapper').html('');
-                        $('#rsvp-modal').modal("show");
+                        $('#alert-wrapper').html(alert_markup('success', '<strong>Gracias!</strong> Estamos felices de que nos puedan acompa&#241;ar.'));
+                        $('#rsvp-form')[0].reset();
                     }
                 })
                 .fail(function (data) {
