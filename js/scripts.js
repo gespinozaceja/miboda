@@ -5,11 +5,11 @@ $(document).ready(function () {
         e.preventDefault();
         var data = $(this).serialize();
 
-        $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
+        $('#alert-wrapper').html(alert_markup('info', '<strong>Aguarda un segundo!</strong> Etamos guardando sus datos &#9203;'));
 
         if (MD5($('#invite_code').val()) !== 'cb3f2915c84d8090754a8a1234bf5d66'
             && MD5($('#invite_code').val()) !== 'dca2cad203c5597e105c9bea028554c2') {
-            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect.'));
+            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Tu codigo de invitacion no es correcto!'));
         } else {
             $.post('https://script.google.com/macros/s/AKfycbwYsrfwCDpUJgkiwTIeA4X8a2L4ftGJU74wIGj2l0pmE6HzK6-jXvogtPMs5AHi-5x5/exec', data)
                 .done(function (data) {
@@ -17,7 +17,7 @@ $(document).ready(function () {
                     if (data.result === "error") {
                         $('#alert-wrapper').html(alert_markup('danger', data.message));
                     } else {
-                        $('#alert-wrapper').html(alert_markup('success', '<strong>Gracias!</strong> Estamos felices de que nos puedan acompa&#241;ar.'));
+                        $('#alert-wrapper').html(alert_markup('success', '<strong>Gracias &#128588;!</strong> Estamos felices &#128522; de que nos puedan acompa&#241;ar &#128149&#129333;&#127995;&#128112;&#127995;'));
                         $('#rsvp-form')[0].reset();
                     }
                 })
