@@ -21,20 +21,12 @@
     text-align: center;
 }
 
-.bg-img {
-    background-image: url('static/img/hex_flower_generic.png') ;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: auto;
-    padding: 7%;
-}
 
 .center-form {
     width: 100%;
     padding: 10%;
     position: center;
-    margin-top: 35%;
+    margin-top: 15%;
 
 }
 
@@ -52,8 +44,9 @@
     }
     .center-form {
         margin-top: auto;
-        padding: 15%;
-        padding-bottom: 30%;
+        padding:5%;
+        padding-top: 15%;
+        padding-bottom: 15%;
     }
     .btn-select{
         margin-left: 15%;
