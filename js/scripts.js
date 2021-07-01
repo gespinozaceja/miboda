@@ -1,3 +1,16 @@
+function remove_person() {
+    //from div with id person 
+    var div = document.getElementById("main-form");
+    div.removeChild(div.lastChild);
+}
+
+function add_person() {
+    var div = document.getElementById("person");
+    let new_clone = div.cloneNode(true);
+    document.getElementById("main-form").appendChild(new_clone);
+    
+}
+
 $(document).ready(function () {
 
     
@@ -27,12 +40,15 @@ $(document).ready(function () {
                 });
         }
     });
+
 /********** Extras **************/
+
 
 // alert_markup
 function alert_markup(alert_type, msg) {
     return '<div class="alert alert-' + alert_type + '" role="alert">' + msg + '<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span>&times;</span></button></div>';
 }
+
 
 // MD5 Encoding
 var MD5 = function (string) {

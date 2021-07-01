@@ -8,7 +8,6 @@
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="icon" type="image/png" sizes="32x32" href="G-M-2.png">
 </head>
-
 <body style="background-color: #88a9c3;">
     <style>
     </style>
@@ -26,80 +25,82 @@
         </a>
     </div>
 
-    <div class="col-md-4 bg-img" >
+    <div class="col-md-4 bg-img" id="background-form" >
 
 
 
         <div class="center-form">
-            <div>
                 <h3>RSVP</h3>
-                <p>Esperamos que nos acompanen &#128588;</p> 
+                <p>Esperamos que nos acompanen &#128588;&#127997;</p> 
                 <p>Les agradesemos &#128149; confirmar antes de Agosto 1 &#128198;</p>
                 <form id="rsvp-form" class="rsvp-form"
                     action=""
                     method="POST">
-                    <div class="row">
-                        <div class="">
+                        <div  id="main-form">
                             <div class="form-input-group">
                                 <i class="fa fa-envelope"></i><input type="email" name="email" class=""
                                                                     placeholder="Email"
                                                                     required>
                             </div>
-                        </div>
-                        <div class="">
-                            <div class="form-input-group">
-                                <i class="fa fa-user"></i><input name="name" class=""
-                                                                placeholder="Nombre"
-                                                                required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="">
-                            <div class="form-input-group">
-                                <i class="fa fa-users"></i><input type="number" name="extras" class="" min="0"
-                                                                
-                                                                placeholder="Cuantos?"
-                                                                required>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="">
-                                <div class="form-input-group">
-                                    <i class="fa fa-child"></i><input type="number" name="kids" class="" min="0"
-                                                                    
-                                                                    placeholder="kids?"
-                                                                    required>
+                            <div id="person">
+                                  <div class="">
+                                        <div class="form-input-group">
+                                            <i class="fa fa-user"></i><input name="name" class=""
+                                                                            placeholder="Nombre"
+                                                                            required>
+                                
+                                        </div>
+                                        <div class="form-input-group">
+                                            <select class="custom-select" name="food" id="inputGroupSelect01">
+                                              <option selected>Food preference?</option>
+                                              <option value="1">&#128019; Chicken</option>
+                                              <option value="2">&#128004; Beef</option>
+                                              <option value="3">&#127812; Vegan</option>
+                                              <option value="3">&#127839; Child under 12</option>
+                                  
+                                            </select>
+                                            </div>
                                 </div>
-                        <div class="row">
-                            <div class="">
-                                <div class="form-input-group">
-                                    <p>Ceremony?</p><input type="checkbox" name="ceremony"  class=""
-                                                                    placeholder="Ceremony">
-                                    <p>Reception?</p><input type="checkbox" name="reception"  class=""
-                                    placeholder="reception">
                             </div>
-                               
-                         </div>
-                    
-                        <div class="">
+                        
+                        </div>  
+                             <button type="button" id="more" onclick="add_person()">&#10133;</button>
+                             <button type="button" onclick="remove_person()">&#10134;</button>
+                            <div class="form-input-group" id="ceremony">
+                            
+                            <input type="checkbox" name="ceremony"  class="" placeholder="Ceremony">
+                            <label class="form-check-label" for="defaultCheck2">
+                               Ceremony ?
+                            </label>       
+                            <p>start @ 3pm</p>
+                            
+                            </div>
+                            <div class="form-input-group" id="Reception">
+                            
+                                <input type="checkbox" name="Reception"  class="" placeholder="Reception">
+                                <label class="form-check-label" for="defaultCheck2">
+                                   Reception ?
+                                </label>        
+                        
+                                <p>start @ 5:30 pm</p>
+                                </div>
                             <div class="form-input-group">
                                 <i class="fa fa-key"></i><input type="number" name="invite_code" id="invite_code"
                                                                 class="" min="0"
                                                                 placeholder="Invite code"
                                                                 required>
                             </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12" id="alert-wrapper"></div>
-                    </div>
+                      <div class="row">
+                         <div class="col-md-12" id="alert-wrapper">
+
+                         </div>
+                     </div>
                     <button class="btn-fills rsvp-btn btn-select">
                         Si,
                         me apunto!
                     </button>
+               
                 </form>
-            </div>
         </div>
     </div>
 
@@ -110,6 +111,5 @@
 <!-- jQuery -->
 <script  src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 <script type="text/javascript" src="js/scripts.js"></script> 
-
 </body>
 </html>
